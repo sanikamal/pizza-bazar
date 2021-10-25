@@ -14,17 +14,7 @@
                         </ul>
                     </div>
                 </div>
-                @if (count($errors) > 0)
-                <div class="card mt-5">
-                    <div class="card-body">
-                        <div class="alert alert-danger">
-                            @foreach ($errors->all() as $error)
-                               <p> {{ $error }}<p>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-                @endif
+
             </div>
 
             <div class="col-md-8">
@@ -40,33 +30,9 @@
                                 <label for="description">Description of pizzza</label>
                                 <textarea class="form-control" name="description"></textarea>
                             </div>
-                            <div class="form-inline">
-                                <label>Pizza price($)</label>
-                                <input type="number" name="small_pizza_price" class="form-control"
-                                    placeholder="small pizza price">
-                                <input type="number" name="medium_pizza_price" class="form-control"
-                                    placeholder="medium pizza price">
-                                <input type="number" name="large_pizza_price" class="form-control"
-                                    placeholder="large pizza price">
 
-                            </div>
-                            <div class="form-group">
-                                <label for="description">Category</label>
-                                <select class="form-control" name="category">
-                                    <option value=""></option>
-                                    <option value="vegetarian">Vegetarian Pizza</option>
-                                    <option value="nonvegetarian">Non vegetarian Pizza</option>
-                                    <option value="traditional">Traditional Pizza</option>
 
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Image</label>
-                                <input type="file" name="image" class="form-control" name="image">
-                            </div>
-                            <div class="form-group text-center">
-                                <button class="btn btn-primary" type="submit">Save</button>
-                            </div>
+
                         </div>
                 </div>
             </div>
