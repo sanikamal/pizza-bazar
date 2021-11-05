@@ -24,6 +24,7 @@ class CreateOrdersTable extends Migration
             $table->string('large_pizza')->defualt(0);
             $table->text('body');
             $table->string('status')->default('pending');
+            $table->string('phone');
             $table->timestamps();
         });
     }
