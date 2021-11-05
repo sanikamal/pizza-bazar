@@ -5,7 +5,7 @@ Route::get('/pizza/{id}', [App\Http\Controllers\FrontendController::class, 'show
 Route::post('/order/store', [App\Http\Controllers\FrontendController::class, 'store'])->name('order.store');
 
 
-Route::group(['prefix'=>'admin','middleware'=>['auth','admin']],function(){
+
 
 
   //user order
@@ -15,5 +15,3 @@ Route::group(['prefix'=>'admin','middleware'=>['auth','admin']],function(){
   //display all customers
   Route::get('/customers', [App\Http\Controllers\UserOrderController::class, 'customers'])->name('customers');
 
-
-});
